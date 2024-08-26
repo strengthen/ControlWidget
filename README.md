@@ -1,6 +1,5 @@
 # 一、 ControlWidget
-<a href='https://apps.apple.com/cn/app/infc/id1562054959'><img height='70' alt='Download from AppStore' src='https://img.whalenas.com:283/image/202207141215375.png' /></a>
->[文章链接](https://www.cnblogs.com/strengthen/p/18362397)
+>[demo文章链接：https://www.cnblogs.com/strengthen/p/18362397](https://www.cnblogs.com/strengthen/p/18362397)
 
 # 二、欢迎从App Store下载：iNFC
 <a href='https://apps.apple.com/cn/app/infc/id1562054959'><img height='70' alt='Download from AppStore' src='https://img.whalenas.com:283/image/202207141215375.png' /></a>
