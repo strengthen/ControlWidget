@@ -10,10 +10,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button(action: {
+                if let url = URL(string: "https://apps.apple.com/cn/app/infc/id1562054959") {
+                    UIApplication.shared.open(url)
+                }
+            }) {
+                Text("iNFC\nThe most powerful NFC application")
+            }
         }
         .padding()
     }
