@@ -63,6 +63,7 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B37101EE2C70611F0073F39B /* ControlWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (B371020B2C70616D0073F39B /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = ControlWidget; sourceTree = "<group>"; };
 		B37102162C7061AD0073F39B /* WidgetExtension */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (B37102242C7061AE0073F39B /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = WidgetExtension; sourceTree = "<group>"; };
+		B37102272C7061BF0073F39B /* Shared */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Shared; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +91,7 @@
 			children = (
 				B37101EE2C70611F0073F39B /* ControlWidget */,
 				B37102162C7061AD0073F39B /* WidgetExtension */,
+				B37102272C7061BF0073F39B /* Shared */,
 				B37102112C7061AC0073F39B /* Frameworks */,
 				B37101ED2C70611F0073F39B /* Products */,
 			);
@@ -132,6 +134,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				B37101EE2C70611F0073F39B /* ControlWidget */,
+				B37102272C7061BF0073F39B /* Shared */,
 			);
 			name = ControlWidget;
 			packageProductDependencies = (
@@ -154,6 +157,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				B37102162C7061AD0073F39B /* WidgetExtension */,
+				B37102272C7061BF0073F39B /* Shared */,
 			);
 			name = WidgetExtensionExtension;
 			packageProductDependencies = (

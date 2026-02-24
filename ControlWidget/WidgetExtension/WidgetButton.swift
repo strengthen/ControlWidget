@@ -20,7 +20,7 @@ struct WidgetButton: ControlWidget {
         StaticControlConfiguration(
             kind: "com.apple.ControlWidgetButton"
         ) {
-            // 定义了一个打开容器App的控件，
+            // 定义了一个打开容器App的控件
             ControlWidgetButton(action: OpenContainerAction()) {
                 Label("WidgetButton", systemImage: "paperplane")
             } actionLabel: { isActive in
@@ -31,23 +31,5 @@ struct WidgetButton: ControlWidget {
         }
         .displayName("iNFC")
         .description("The most powerful NFC application")
-    }
-}
-
-struct OpenContainerAction: AppIntent {
-    // // 本地化字符串资源
-    static let title: LocalizedStringResource = "WidgetButton"
-    // 定义了执行意图时的操作。
-    func perform() async throws -> some IntentResult & OpensIntent {
-        // 保存数据到Group App容器，传递给主应用
-        if let appGroupDefaults = UserDefaults(suiteName: "group.com.apple.iNFC") {
-            if appGroupDefaults.bool(forKey: "widgetExtensionData") {
-                appGroupDefaults.set(false, forKey: "widgetExtensionData")
-            } else {
-                appGroupDefaults.set(true, forKey: "widgetExtensionData")
-            }
-        }
-        // 重要：打开容器App的操作
-        return .result(opensIntent: OpenURLIntent(URL(string: "iNFC://")!))
     }
 }
